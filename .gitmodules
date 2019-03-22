@@ -1,0 +1,6 @@
+[submodule "allgermans"]
+	path = allgermans
+	url = https://github.com/void4/allgermans
+[submodule "selfdestruct"]
+	path = selfdestruct
+	url = https://github.com/void4/selfdestruct
