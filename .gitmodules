@@ -4,3 +4,6 @@
 [submodule "selfdestruct"]
 	path = selfdestruct
 	url = https://github.com/void4/selfdestruct
+[submodule "webjump"]
+	path = webjump
+	url = https://github.com/void4/webjump
