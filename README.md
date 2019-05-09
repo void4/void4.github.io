@@ -4,7 +4,7 @@ https://void4.github.io/
 
 https://esolangs.org/wiki/RarVM
 
-<a href="webjump/index.html">RarVM on the Web, via PyIodide</a>
+<a href="webjump/index.html">RarVM on the Web, via PyIodide</a> (try with Chrome)
 <br>
 
 <a href="selfdestruct/index.html">Self destroying game</a><br>
