@@ -9,4 +9,4 @@
 	url = https://github.com/void4/webjump
 [submodule "pointofnoreturn"]
 	path = pointofnoreturn
-	url = git@github.com:void4/pointofnoreturn.git
+	url = https://github.com/void4/pointofnoreturn
