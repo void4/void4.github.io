@@ -12,5 +12,7 @@ https://esolangs.org/wiki/RarVM
 <a href="allgermans/Germany.html">Map of all Germans by occuption</a><br>
 <a href="allgermans/index.html">Karte aller Deutschen nach Beschäftigung</a><br>
 <br>
+<a href="allgermans/americans.html">Map of employed US-Americans by occupation</a><br>
+<br>
 <a href="pointofnoreturn/index.html">Point of no Return</a><br>
 <br>
