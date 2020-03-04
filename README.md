@@ -3,15 +3,15 @@
 https://void4.github.io/
 
 ## Notes
-https://github.com/void4/notes/issues
 
+<a href="https://github.com/void4/notes/issues">https://github.com/void4/notes/issues</a>
 ## Repositories
+<a href="https://github.com/void4?tab=repositories">https://github.com/void4?tab=repositories</a>
 
-https://github.com/void4?tab=repositories
 
 ## RarVM
-https://esolangs.org/wiki/RarVM
 
+<a href="https://esolangs.org/wiki/RarVM">https://esolangs.org/wiki/RarVM</a><br>
 <a href="webjump/index.html">RarVM on the Web, via PyIodide</a> (try with Chrome)
 
 ## Visualizations
