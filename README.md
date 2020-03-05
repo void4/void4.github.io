@@ -1,7 +1,3 @@
-# void4.github.io
-
-https://void4.github.io/
-
 ## Notes
 
 <a href="https://github.com/void4/notes/issues">https://github.com/void4/notes/issues</a>
