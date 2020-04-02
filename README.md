@@ -1,14 +1,17 @@
-## Notes
-
+## Github
+### Profile
+<a href="https://github.com/void4/notes/issues">https://github.com/void4</a>
+### Notes
 <a href="https://github.com/void4/notes/issues">https://github.com/void4/notes/issues</a>
-## Repositories
+### Repositories
 <a href="https://github.com/void4?tab=repositories">https://github.com/void4?tab=repositories</a>
 
 ## Twitter
 <a href="https://twitter.com/dd4ta">https://twitter.com/dd4ta</a>
 
-## RarVM
+## Virtual Machines
 
+<a href="https://esolangs.org/wiki/KeyVM">https://esolangs.org/wiki/KeyVM</a><br>
 <a href="https://esolangs.org/wiki/RarVM">https://esolangs.org/wiki/RarVM</a><br>
 <a href="webjump/index.html">RarVM on the Web, via PyIodide</a> (try with Chrome)
 
