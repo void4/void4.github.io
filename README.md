@@ -13,7 +13,7 @@
 
 <a href="https://esolangs.org/wiki/KeyVM">https://esolangs.org/wiki/KeyVM</a><br>
 <a href="https://esolangs.org/wiki/RarVM">https://esolangs.org/wiki/RarVM</a><br>
-<a href="webjump/index.html">RarVM on the Web, via PyIodide</a> (try with Chrome)
+<a href="webjump/index.html">RarVM on the Web, via PyIodide</a>
 
 ## Visualizations
 
