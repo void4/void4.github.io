@@ -20,12 +20,14 @@
 ### Wikipedia
 <a href="https://wikiscape.org">https://wikiscape.org</a>
 
-### People by occupations
+### Occupations
+
 <a href="allgermans/Germany.html">Map of all Germans by occuption</a><br>
 <a href="allgermans/index.html">Karte aller Deutschen nach Beschäftigung</a><br>
 <br>
 <a href="allgermans/americans.html">Map of employed US-Americans by occupation</a><br>
-
+<br>
+<a href="allgermans/occupations.html">Map of all occupation examples in ISCO-08</a><br>
 
 ## Shenanigans
 <a href="pointofnoreturn/index.html">Point of no Return</a><br>
