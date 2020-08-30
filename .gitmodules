@@ -10,3 +10,6 @@
 [submodule "pointofnoreturn"]
 	path = pointofnoreturn
 	url = https://github.com/void4/pointofnoreturn
+[submodule "free-attention"]
+	path = free-attention
+	url = https://github.com/void4/free-attention
