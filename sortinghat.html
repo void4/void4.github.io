@@ -69,6 +69,10 @@ html {
 
 }
 
+.saying:empty:before {
+	content: "\200b";
+}
+
 .showbutton {
   text-shadow: 0 0 2px #000; /* horizontal-offset vertical-offset 'blur' colour */
   -moz-text-shadow: 0 0 2px #000;
@@ -88,8 +92,8 @@ html {
 .hat {
     height: auto; 
     width: auto; 
-    max-width: 50%; 
-    max-height: 50%;
+    max-width: 30%; 
+    max-height: 30%;
 }  
 
 @keyframes fadein {
@@ -118,16 +122,22 @@ html {
 
 <div id="app" class="content" v-cloak style="width: 100%; display: flex; align-items: center; justify-content: center; flex-direction: column;">
 
-  <img class="hat" src="strangehat.png"><br>
-
-  <template v-if="saying">
-  	<span class="saying">"{{ saying }}!"</span><br>
-  	<button class="tryagain" @click="tryAgain()">try again</button>
-  </template>
   <br><br>
 
-  <button v-if="showbutton" class="showbutton" @click="putOnHat()">put on hat</button>
+  
+<span class="saying"><template v-if="saying">"{{ saying }}!"</template> </span><br>
+  	
+  
+  <br><br>
 
+ <img class="hat" src="strangehat.png"><br>
+
+ <template v-if="saying">
+	<button class="tryagain" @click="tryAgain()">try again</button>
+</template>
+<template v-else>
+  <button class="showbutton" @click="putOnHat()">put on hat</button>
+</template>
   <br><br>
 
 </div>
@@ -136,20 +146,36 @@ html {
 
 <script>
 
+function randomChoice(arr) {
+    return arr[Math.floor(arr.length * Math.random())];
+}
+
+function removeItemOnce(arr, value) {
+  var index = arr.indexOf(value);
+  if (index > -1) {
+    arr.splice(index, 1);
+  }
+  return arr;
+}
+
 var app = new Vue({
   el: '#app',
   data: {
   	saying: null,
-  	showbutton: true,
+  	initialsayings: ["a", "b", "c"],
+  	sayings: []
   },
   methods: {
   	putOnHat() {
-  		app.saying = "test"
-  		app.showbutton = false
+  		if (app.sayings.length == 0) {
+  			app.sayings = JSON.parse(JSON.stringify(app.initialsayings))
+  		}
+  		var saying = randomChoice(app.sayings)
+  		app.sayings = removeItemOnce(app.sayings, saying)
+  		app.saying = saying
   	},
   	tryAgain() {
   		app.saying = null
-  		app.showbutton = true
   	}
   }
 })
