@@ -108,7 +108,7 @@ html {
   -webkit-text-shadow: 0 0 2px #000;
   color: gold;
   font-weight: bold;
-  font-size: 1em;
+  font-size: 1.5em;
   background-color: brown;
   border-radius: 25px;
     	background-position: center;
@@ -118,6 +118,13 @@ html {
   border: 3px solid gold;
   animation: fadein 5s;
 }
+
+.extraimg {
+    height: auto; 
+    width: auto; 
+    max-width: 30%; 
+    max-height: 10%;	
+}
 </style>
 
 <div id="app" class="content" v-cloak style="width: 100%; display: flex; align-items: center; justify-content: center; flex-direction: column;">
@@ -125,7 +132,9 @@ html {
   <br><br>
 
   
-<span class="saying"><template v-if="saying">"{{ saying }}!"</template> </span><br>
+<span class="saying"><template v-if="saying">"{{ saying }}!" <br></template></span><br>
+
+<img v-if="imgpath" class="extraimg" :src="imgpath">
   	
   
   <br><br>
@@ -162,6 +171,7 @@ var app = new Vue({
   el: '#app',
   data: {
   	saying: null,
+  	imgpath: null,
   	initialsayings: `Gryffindor
 Slytherin
 Ravenclaw
@@ -171,7 +181,8 @@ The Hallway
 None
 Your very own, new house
 You are at the wrong school
-Go back home`.split("\n"),
+Go back home
+Hufflepuff! Also, take this talking tailless whip scorpion as pet;taillesswhipscorpion.png`.split("\n"),
   	sayings: []
   },
   methods: {
@@ -179,12 +190,18 @@ Go back home`.split("\n"),
   		if (app.sayings.length == 0) {
   			app.sayings = JSON.parse(JSON.stringify(app.initialsayings))
   		}
-  		var saying = randomChoice(app.sayings)
-  		app.sayings = removeItemOnce(app.sayings, saying)
+  		var line = randomChoice(app.sayings)
+  		var splitsaying = line.split(";")
+  		if (splitsaying.length > 1) {
+  			app.imgpath = splitsaying[1]
+  		}
+  		var saying = splitsaying[0]
+  		app.sayings = removeItemOnce(app.sayings, line)
   		app.saying = saying
   	},
   	tryAgain() {
   		app.saying = null
+  		app.imgpath = null
   	}
   }
 })
